@@ -20,6 +20,7 @@ public class Room
 {
     private String description;
     private HashMap<String, Room> exits;
+    private Item item;
 
     /**
      * Return a description of the room’s exits,
@@ -63,6 +64,15 @@ public class Room
         exits = new HashMap<String, Room>();
     }
 
+    /**
+     * Add an item to this room
+     */
+    public void setItem(Item item)
+    {
+        this.item = item;
+    }
+
+
      /**
      * Define an exit from this room.
      * @param direction The direction of the exit.
@@ -91,7 +101,12 @@ public class Room
      */
     public String getLongDescription()
     {
-        return "You are " + description + ".\n" + getExitString();
+        String descript = "You are " + description + ".\n" + getExitString();
+        if (item != null) {
+            descript += "This room contains " + item.getDescription() + "\n";
+        }
+        return descript + getExitString();
+
     }
     
     /**

@@ -127,6 +127,20 @@ public class Game
         violet.setExit("north", indigo);
 
         currentRoom = green;  // start game outside
+
+        // create items
+        Item pizza, cash, dog;
+
+        pizza = new Item("A warm cheesey pizza just sitting there!");
+        cash = new Item("A big wad cash lying in the street!");
+        dog = new Item("A snarling dog watch out!");
+
+        red.setItem(dog);
+
+        violet.setItem(cash);
+
+        orange.SetItem(pizza);
+
     }
     
     /**
