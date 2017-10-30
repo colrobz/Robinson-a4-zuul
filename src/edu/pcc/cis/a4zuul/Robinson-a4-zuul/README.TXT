@@ -1,5 +1,5 @@
-Project: zuul-bad
-Authors: Michael Kölling and David J. Barnes
+Project: rainbow-pizza
+Authors: Colin Robinson
 
 This project is part of the material for the book
 
