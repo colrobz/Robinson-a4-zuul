@@ -142,19 +142,7 @@ public class Game
         orange.SetItem(pizza);
 
     }
-    
-    /**
-     * Create items with their descriptions
-     */
-    private void createItems()
-    {
-        Item pizza, dog, cash;
-        
-        //create items
-        pizza = new Item("is tasty and cheesy");
-        dog = new Item("is scary and barking at you");
-        cash = new Item("is money to spend");
-    }
+
     
     /**
      *  Main play routine.  Loops until end of play.
