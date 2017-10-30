@@ -131,9 +131,9 @@ public class Game
         // create items
         Item pizza, cash, dog;
 
-        pizza = new Item("A warm cheesey pizza just sitting there!");
-        cash = new Item("A big wad cash lying in the street!");
-        dog = new Item("A snarling dog watch out!");
+        pizza = new Item("A warm cheesey pizza just sitting there!", 15);
+        cash = new Item("A big wad cash lying in the street!", 20);
+        dog = new Item("A snarling dog watch out!", 100);
 
         red.setItem(dog);
 
