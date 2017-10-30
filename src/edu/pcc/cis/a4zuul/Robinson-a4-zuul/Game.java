@@ -129,32 +129,22 @@ public class Game
         currentRoom = green;  // start game outside
 
         // create items
-        Item pizza, cash, dog;
+        Item pizza, cash, dog, candy;
 
         pizza = new Item("A warm cheesey pizza just sitting there!", 15);
         cash = new Item("A big wad cash lying in the street!", 20);
         dog = new Item("A snarling dog watch out!", 100);
+        candy = new Item("A tasty candy bar!", 500);
 
         red.setItem(dog);
 
         violet.setItem(cash);
 
-        orange.SetItem(pizza);
+        orange.setItem(pizza);
 
+        blue.setItem(candy);
     }
-    
-    /**
-     * Create items with their descriptions
-     */
-    private void createItems()
-    {
-        Item pizza, dog, cash;
-        
-        //create items
-        pizza = new Item("is tasty and cheesy");
-        dog = new Item("is scary and barking at you");
-        cash = new Item("is money to spend");
-    }
+
     
     /**
      *  Main play routine.  Loops until end of play.
